@@ -34,8 +34,8 @@ jobs:
       - name: Download code
         uses: actions/download-artifact@v2
         with:
-          - name: code
-            path: .
+          name: code
+          path: .
       - name: Build with Gradle
         run: ci/build-app.sh
       - name: Upload Repo
